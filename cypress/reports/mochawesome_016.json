@@ -1,0 +1,317 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-19T02:55:39.538Z",
+    "end": "2021-05-19T02:55:40.292Z",
+    "duration": 754,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06d3ec8c-3e56-4412-856e-a8b86a2d81f4",
+      "title": "",
+      "fullFile": "cypress/integration/bonus.spec.js",
+      "file": "cypress/integration/bonus.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c306f65-8487-4ef5-ab3e-baa210a5f892",
+          "title": "12 - Adicione uma tabela à página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A página deve possuir uma tabela",
+              "fullTitle": "12 - Adicione uma tabela à página A página deve possuir uma tabela",
+              "timedOut": null,
+              "duration": 159,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('table');",
+              "err": {},
+              "uuid": "eb6d0b12-5907-4039-a65f-3723c2ce8bdb",
+              "parentUUID": "7c306f65-8487-4ef5-ab3e-baa210a5f892",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb6d0b12-5907-4039-a65f-3723c2ce8bdb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 159,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e948cf54-9c79-425c-99be-ec4253debde1",
+          "title": "13 - Utilize o Box model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Altere `margin`, `padding` e `border` dos elementos para ver, na prática, como esses atributos influenciam e melhoram a visualização dos componentes",
+              "fullTitle": "13 - Utilize o Box model Altere `margin`, `padding` e `border` dos elementos para ver, na prática, como esses atributos influenciam e melhoram a visualização dos componentes",
+              "timedOut": null,
+              "duration": 68,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('./style.css').then(function (content) {\n  var styles = ['margin', 'padding', 'border'];\n  expect(styles.every(function (style) {\n    return content.match(style);\n  }), 'Do not match styles margin, padding and border').to.be[\"true\"];\n});",
+              "err": {},
+              "uuid": "be8844db-0263-4aca-bd37-117a433798e2",
+              "parentUUID": "e948cf54-9c79-425c-99be-ec4253debde1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "be8844db-0263-4aca-bd37-117a433798e2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 68,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c5ee33b4-a525-4008-921f-592ccce50683",
+          "title": "14 - Altere atributos relacionados as fontes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Altere o tamanho da letra",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o tamanho da letra",
+              "timedOut": null,
+              "duration": 99,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /font-size:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "5d2eb55f-89a7-4557-b60d-bd6459d31dad",
+              "parentUUID": "c5ee33b4-a525-4008-921f-592ccce50683",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere a cor da letra",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere a cor da letra",
+              "timedOut": null,
+              "duration": 61,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /[^-]color:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "362fb1b2-4e5a-45ae-9b2b-191f2836fe61",
+              "parentUUID": "c5ee33b4-a525-4008-921f-592ccce50683",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere o espaçamento entre as linhas",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o espaçamento entre as linhas",
+              "timedOut": null,
+              "duration": 62,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /line-height:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "bdf6c35f-5344-49f7-82c1-0dee9bb7e251",
+              "parentUUID": "c5ee33b4-a525-4008-921f-592ccce50683",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere o `font-family`",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o `font-family`",
+              "timedOut": null,
+              "duration": 62,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /font-family:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {},
+              "uuid": "9235c36e-03cf-4954-a7fe-88dfd60cb806",
+              "parentUUID": "c5ee33b4-a525-4008-921f-592ccce50683",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5d2eb55f-89a7-4557-b60d-bd6459d31dad",
+            "362fb1b2-4e5a-45ae-9b2b-191f2836fe61",
+            "bdf6c35f-5344-49f7-82c1-0dee9bb7e251",
+            "9235c36e-03cf-4954-a7fe-88dfd60cb806"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 284,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fcf1b884-0290-4a2a-9926-afb36001df9f",
+          "title": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Utilizar a classe \"lado-esquerdo\"",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Utilizar a classe \"lado-esquerdo\"",
+              "timedOut": null,
+              "duration": 57,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('.lado-esquerdo');",
+              "err": {},
+              "uuid": "dd864c50-03ff-46c2-a48e-5894c442217e",
+              "parentUUID": "fcf1b884-0290-4a2a-9926-afb36001df9f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Utilizar a classe \"lado-direito\"",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Utilizar a classe \"lado-direito\"",
+              "timedOut": null,
+              "duration": 49,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('.lado-direito');",
+              "err": {},
+              "uuid": "096c6a0d-00a0-4e08-9a25-b42909e68d9a",
+              "parentUUID": "fcf1b884-0290-4a2a-9926-afb36001df9f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar se os elementos com as classes lado-direito e lado-esquerdo estão posicionados corretamente",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Verificar se os elementos com as classes lado-direito e lado-esquerdo estão posicionados corretamente",
+              "timedOut": null,
+              "duration": 50,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().then(function (doc) {\n  var leftSide = {\n    top: (0, _ActionBase.evaluateOffset)(doc, '.lado-esquerdo', 'Top'),\n    height: (0, _ActionBase.evaluateOffset)(doc, '.lado-esquerdo', 'Height')\n  };\n  var rightSide = {\n    top: (0, _ActionBase.evaluateOffset)(doc, '.lado-direito', 'Top'),\n    height: (0, _ActionBase.evaluateOffset)(doc, '.lado-direito', 'Height')\n  };\n  expect((0, _ActionBase.isSidebySide)(leftSide, rightSide), 'Not side by side. *hint - search for float, width and positioning properties to achieve this requirement*').to.be[\"true\"];\n});",
+              "err": {},
+              "uuid": "b86b76d5-6e9f-424d-9a8f-3298d38a7f4a",
+              "parentUUID": "fcf1b884-0290-4a2a-9926-afb36001df9f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd864c50-03ff-46c2-a48e-5894c442217e",
+            "096c6a0d-00a0-4e08-9a25-b42909e68d9a",
+            "b86b76d5-6e9f-424d-9a8f-3298d38a7f4a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 156,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
