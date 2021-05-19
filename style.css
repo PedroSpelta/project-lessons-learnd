@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  line-height: 120%;
+}
+
+#titulo {
+  font-size: 25px;
+  font-family: Times New Roman, Times, serif;
+}
+
+#cabecalho {
+  top: 0;
+  text-align: center;
+  background-color: rgb(100, 185, 20);
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+#rodape {
+  background-color: rgb(100, 185, 20);
+  color: white;
+  clear: both;
+}
+
+#navegador {
+  margin-top: 35px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td , th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+main {
+  margin: 10px;
+  padding: 2px;
+  align-items: center;
+}
+
+.lado-direito {
+  float: right;
+  width: 40%;
+}
+
+.lado-esquerdo {
+  float: left;
+  width: 40%;
+  margin: 10px;
+}
